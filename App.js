@@ -6,7 +6,7 @@ import Accueil from './components/Accueil';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>G S O A F</Text>
+      <Accueil/>
     </View>
   );
 }
@@ -17,8 +17,5 @@ const styles = StyleSheet.create({
     backgroundColor: '#1b586b',
     alignItems: 'center',
     justifyContent: 'center',
-  },
-  title: {
-    color: 'white',
-  },
+  }
 });
