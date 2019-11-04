@@ -1,9 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-import Accueil from './components/Accueil';
-
-export default function App() {
+export default function Accueil() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>G S O A F</Text>
