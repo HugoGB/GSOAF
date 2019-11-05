@@ -25,7 +25,7 @@ export default function Accueil() {
                     onPress={() => Alert.alert('Components Regles')} />
             </View>            
             <Text style={styles.prevention}>Attention l'abus d'alcool est très bon pour la santé.
-                En poursuivant, vous confirmez que vous ouvrez cette application pour vous mettre une méga cuite.
+                En poursuivant, vous confirmez que vous ouvrez cette application pour vous mettre une méga murge.
                 Merci de bien finir vos bouteilles d'alcool et de les jeter dans les poubelles prévues pour. 
                 {'\n'}{'\n'} #EcoloMonGars</Text>
         </View>        

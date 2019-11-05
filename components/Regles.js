@@ -14,7 +14,7 @@ export default function Regles() {
                                         Mais aussi d'autres Jeux pour se murger la gueule salement ! {'\n'}
                                         Mais pas tout de suite vu qu'on travaille dessus
             </Text>
-            <Text style={styles.title2}>Les Règles Sont Simples !</Text>
+            <Text style={styles.title2}>{'\n'}{'\n'}Les Règles Sont Simples !</Text>
             <Text style={styles.text}>"La Pyramide" , avant de commencer à jouer, il va falloir créer une pyramide avec des carte (trop fou, personne s’en doutais je pense).{'\n'}
                   Commence avec une base de 5 cartes, c’est pas mal pour commencer ce jeu ! {'\n'}
                   Si tu connais déjà et que tu viens sur l'appli juste pour te rappeler les règles, fait toi plaisir avec les cartes 😉.{'\n'}
@@ -61,12 +61,13 @@ const styles = StyleSheet.create({
         textAlign: 'center',
     },
     image: {
-        marginTop:30,
+        marginTop:75,
         width: 200,
         height: 75,
         resizeMode: 'stretch'
     },
     imgPyra:{
+        marginTop: 20,
         width: 300,
         height: 150,
         justifyContent: "center",
@@ -78,6 +79,8 @@ const styles = StyleSheet.create({
         justifyContent: "center",
     },
     containerScroll: {
+        marginTop: 25,
+        marginBottom: 50,
         // backgroundColor:'red',
         width: 305,
         textAlign: 'center',
