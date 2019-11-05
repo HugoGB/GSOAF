@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image, Button, Alert } from 'react-native';
 
-export default function Accueil() {
+export default function Joueurs() {
   return (
     <View>
         <View style={styles.head}>
@@ -16,7 +16,7 @@ export default function Accueil() {
                 <Button 
                     color="#FFB341"
                     title="Jouer"
-                    onPress={() => Alert.alert('Components Joueurs')} />
+                    onPress={() => Alert.alert('Components Jeux')} />
             </View>
             <View style={{marginTop:50}}>
                 <Button 
