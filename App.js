@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
 import Accueil from './components/Accueil';
+import Regles from './components/Regles';
 
 export default function App() {
   return (
