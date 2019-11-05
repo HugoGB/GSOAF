@@ -3,6 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 // import { createStackNavigator, createAppContainer } from "react-navigation";
 
 import Accueil from './components/Accueil';
+import Regles from './components/Regles';
 
 export default function App() {
   return (
