@@ -3,62 +3,84 @@ import { StyleSheet, Text, View, Image, ScrollView } from 'react-native';
 
 export default function Regles() {
   return (
-    <View>
-        <View style={styles.image}>
-            <Image style={styles.img}
-                source={require('../assets/logo.png')} />
-        </View>
+    <View style={styles.container}>
+        <Image style={styles.image}
+            source={require('../assets/logo.png')} />
 
-        <View style={styles.titre}>
-            <Text style={styles.title}>G S O A F</Text>
-        </View>
+        <Text style={styles.title}>G S O A F</Text>
+        <ScrollView style={styles.containerScroll}>
+            <Text style={styles.text}>Bonjour, et Bienvenue Dans Cette Application pour Soiffard,
+                                        Dans cette application vous retrouverez le jeu de la pyramide,
+                                        Mais aussi d'autres Jeux pour se murger la gueule salement ! {'\n'}
+                                        Mais pas tout de suite vu qu'on travaille dessus
+            </Text>
+            <Text style={styles.title2}>Les Règles Sont Simples !</Text>
+            <Text style={styles.text}>"La Pyramide" , avant de commencer à jouer, il va falloir créer une pyramide avec des carte (trop fou, personne s’en doutais je pense).{'\n'}
+                  Commence avec une base de 5 cartes, c’est pas mal pour commencer ce jeu ! {'\n'}
+                  Si tu connais déjà et que tu viens sur l'appli juste pour te rappeler les règles, fait toi plaisir avec les cartes 😉.{'\n'}
+                  On te conseille un jeu de 52 cartes (éviter le 34 cartes si vous êtes au moins 3 à jouer).{'\n'}
+                  Au début de la partie il faut distibuer des cartes aux joueurs pour çail faut donc poser des questions !{'\n'}
+                  Pour la première carte : rouge ou noir -> 1 gorgée{'\n'}
+                  Deuxième carte : plus ou moins (par rapport à la première) -> 2 gorgées{'\n'}
+                  Troisième carete : inter ou exter (par rapport aux 2 cartes précédentes) ->3 gorgées{'\n'}
+                  (Si c’est la même il boit (après tout on est là pour ça!!)
+                  Quatrième carte : coeur, carreau, pique ou trèfle -> 4 gorgées{'\n'}
 
-        <ScrollView style={styles.ContainerScroll}>
-        <Text style={styles.textRules}>Bienvenue Dans cette application pour Soiffard,
-        Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.
-
-        Pourquoi l'utiliser?
-        On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte. Du texte. Du texte.' est qu'il possède une distribution de lettres plus ou moins normale, et en tout cas comparable avec celle du français standard. De nombreuses suites logicielles de mise en page ou éditeurs de sites Web ont fait du Lorem Ipsum leur faux texte par défaut, et une recherche pour 'Lorem Ipsum' vous conduira vers de nombreux sites qui n'en sont encore qu'à leur phase de construction. Plusieurs versions sont apparues avec le temps, parfois par accident, souvent intentionnellement (histoire d'y rajouter de petits clins d'oeil, voire des phrases embarassantes).
-
-
-        D'où vient-il?
-        Contrairement à une opinion répandue, le Lorem Ipsum n'est pas simplement du texte aléatoire. Il trouve ses racines dans une oeuvre de la littérature latine classique datant de 45 av. J.-C., le rendant vieux de 2000 ans. Un professeur du Hampden-Sydney College, en Virginie, s'est intéressé à un des mots latins les plus obscurs, consectetur, extrait d'un passage du Lorem Ipsum, et en étudiant tous les usages de ce mot dans la littérature classique, découvrit la source incontestable du Lorem Ipsum. Il provient en fait des sections 1.10.32 et 1.10.33 du "De Finibus Bonorum et Malorum" (Des Suprêmes Biens et des Suprêmes Maux) de Cicéron. Cet ouvrage, très populaire pendant la Renaissance, est un traité sur la théorie de l'éthique. Les premières lignes du Lorem Ipsum, "Lorem ipsum dolor sit amet...", proviennent de la section 1.10.32.
-
-        L'extrait standard de Lorem Ipsum utilisé depuis le XVIè siècle est reproduit ci-dessous pour les curieux. Les sections 1.10.32 et 1.10.33 du "De Finibus Bonorum et Malorum" de Cicéron sont aussi reproduites dans leur version originale, accompagnée de la traduction anglaise de H. Rackham (1914).
-
-        Où puis-je m'en procurer?
-        Plusieurs variations de Lorem Ipsum peuvent être trouvées ici ou là, mais la majeure partie d'entre elles a été altérée par l'addition d'humour ou de mots aléatoires qui ne ressemblent pas une seconde à du texte standard. Si vous voulez utiliser un passage du Lorem Ipsum, vous devez être sûr qu'il n'y a rien d'embarrassant caché dans le texte. Tous les générateurs de Lorem Ipsum sur Internet tendent à reproduire le même extrait sans fin, ce qui fait de lipsum.com le seul vrai générateur de Lorem Ipsum. Iil utilise un dictionnaire de plus de 200 mots latins, en combinaison de plusieurs structures de phrases, pour générer un Lorem Ipsum irréprochable. Le Lorem Ipsum ainsi obtenu ne contient aucune répétition, ni ne contient des mots farfelus, ou des touches d'humour. </Text>
+                  Ensuite on construit une pyramide de carte retourné.Puis on les retourne une à une (Voir la premiere photo en bas),{'\n'}
+                  Si vous avez le meme numéro vous pouvez donner des gorgées en fonction de la hauteur si c'est la premiere base ->1 gorgée, deuxième base -> 2 gorgées, etc ...{'\n'}
+                  (Voir photo n°2 en bas )</Text>
+                  <Image style={styles.imgPyra} source={require('../assets/pyramide_p1.jpg')} />
+                  <Image style={styles.imgPyra2} source={require('../assets/img_Pyra2.jpg')} />
         </ScrollView>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-    image: {
-        flex: 1,
+    container:{
+        display: 'flex' ,
         alignItems: 'center',
-        justifyContent: 'flex-end'
+        justifyContent: 'space-between'
     },
     titre: {
-        flex: 2,
-        alignItems: 'center',
+      
         marginTop: 50,
     },
     title: {
         color: 'white',
     },
-    img: {
-        position: 'absolute',
+    title2: {
+        fontSize: 21,
+        color: '#FFB341',
+        textAlign: 'center',
+    },
+    text:{
+        marginTop: 50,
+        color: 'white',
+        fontSize: 17,
+        textAlign: 'center',
+    },
+    image: {
+        marginTop:30,
         width: 200,
         height: 75,
         resizeMode: 'stretch'
     },
-    textRules: {
+    imgPyra:{
+        width: 300,
+        height: 150,
+        justifyContent: "center",
+    },
+    imgPyra2:{
+        marginTop: 20,
+        width: 300,
+        height: 150,
+        justifyContent: "center",
+    },
+    containerScroll: {
+        // backgroundColor:'red',
+        width: 305,
+        textAlign: 'center',
+    },
 
-    },
-    ContainerScroll: {
-        position: 'absolute',
-        width:'200',
-        height:'200',
-    },
 });
