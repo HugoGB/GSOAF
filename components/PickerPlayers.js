@@ -117,6 +117,7 @@ class PickerPlayers extends React.Component {
             </Picker>
 
             {inputs}
+         
          </View>
       )
    }
