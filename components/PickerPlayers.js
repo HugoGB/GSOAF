@@ -120,7 +120,7 @@ class PickerPlayers extends React.Component {
                
       }
       return (
-         <View>
+         <View style={{height: '55%'}}>
             <Picker style={styles.picker} selectedValue={this.state.user} onValueChange={this.updateUser}>
                <Picker.Item label="1" value="un" />
                <Picker.Item label="2" value="deux" />
@@ -143,7 +143,7 @@ export default PickerPlayers
 const styles = StyleSheet.create({
    inputView: {
       width: 225,
-      maxHeight: '65%',
+      maxHeight: '80%',
    },
    input: {
       color: 'white',
