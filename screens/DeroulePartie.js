@@ -6,7 +6,7 @@ export default class Partie extends React.Component {
     // const Players = 
     render() {
         return (
-            <View style={styles.container}>
+            <View>
                 <Text>Pour la suite de ce jeu il faut un narrateur désigner le narrateur :</Text>
             </View>
         )

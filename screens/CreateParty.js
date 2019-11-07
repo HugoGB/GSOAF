@@ -3,6 +3,14 @@ import { StyleSheet, Text, View, Image, Button } from 'react-native';
 import PickerPlayers from '../components/PickerPlayers.js';
 
 export default class CreateParty extends React.Component {
+
+  // constructor(props){
+  //   super(props);
+  //   this.input;
+  //   this.state= {
+  //     names: {},
+  //   }
+  // }
   static navigationOptions = {
     headerTintColor: 'white',
     headerStyle: {
@@ -16,12 +24,13 @@ export default class CreateParty extends React.Component {
             <Image style={styles.image}
                 source={require('../assets/logo_unique.png')} />
             <Text style={styles.title}>G S O A F</Text>
-            <PickerPlayers /> 
+            <PickerPlayers /*names={this.state.names}*/ /> 
+            <Text>{this.props.user}</Text>
             <View style={{width:250, marginTop:50}}>
                 <Button
                     color="#FFB341"
                     title="Jouer"
-                    onPress={() => navigate('Accueil')} />
+                    onPress={() => navigate('DeroulePartie' /*, { names: this.state.names } */)} />
             </View>
         </View>
     );
