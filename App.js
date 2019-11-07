@@ -10,5 +10,7 @@ const MainNavigator = createStackNavigator({
   Regles: {screen: Regles},
   CreateParty: {screen: CreateParty},
 });
+
 const App = createAppContainer(MainNavigator);
+
 export default App;
