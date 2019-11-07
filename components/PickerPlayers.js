@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { View, Text, Picker, StyleSheet } from 'react-native'
 import { FormLabel, FormInput, Input } from 'react-native-elements';
+import { ScrollView } from 'react-native-gesture-handler';
 
 class PickerPlayers extends React.Component {
    state = { user: '' }
@@ -13,95 +14,110 @@ class PickerPlayers extends React.Component {
          inputs = <Text style={styles.uno}>PAS DE SOIFFARD SOLITAIRE</Text>;
       } else if (this.state.user == "deux") {
          inputs = <View style={styles.inputView}>
-                     <Input inputStyle={styles.input}
-                        label='Nom du joueur 1' />
-                     <Input inputStyle={styles.input}
-                        label='Nom du joueur 2' />
+                     <ScrollView>
+                        <Input inputStyle={styles.input}
+                           label='Nom du joueur 1' />
+                        <View style={{marginTop:30}}><Input inputStyle={styles.input}
+                           label='Nom du joueur 2' /></View>
+                     </ScrollView>
                   </View>
       } else if (this.state.user == "trois") {
          inputs = <View style={styles.inputView}>
-                     <Input inputStyle={styles.input}
-                        label='Nom du joueur 1' />
-                     <Input inputStyle={styles.input}
-                        label='Nom du joueur 2' />
-                     <Input inputStyle={styles.input}
-                        label='Nom du joueur 3' />
+                     <ScrollView>
+                        <Input inputStyle={styles.input}
+                           label='Nom du joueur 1' />
+                        <View style={{marginTop:30}}><Input inputStyle={styles.input}
+                           label='Nom du joueur 2' /></View>
+                        <View style={{marginTop:30}}><Input inputStyle={styles.input}
+                           label='Nom du joueur 3' /></View>
+                     </ScrollView>
                   </View>
       } else if (this.state.user == "quatre") {
          inputs = <View style={styles.inputView}>
-                     <Input inputStyle={styles.input}
-                        label='Nom du joueur 1' />
-                     <Input inputStyle={styles.input}
-                        label='Nom du joueur 2' />
-                     <Input inputStyle={styles.input}
-                        label='Nom du joueur 3' />
-                     <Input inputStyle={styles.input}
-                        label='Nom du joueur 4' />
+                     <ScrollView>
+                        <Input inputStyle={styles.input}
+                           label='Nom du joueur 1' />
+                        <View style={{marginTop:30}}><Input inputStyle={styles.input}
+                           label='Nom du joueur 2' /></View>
+                        <View style={{marginTop:30}}><Input inputStyle={styles.input}
+                           label='Nom du joueur 3' /></View>
+                        <View style={{marginTop:30}}><Input inputStyle={styles.input}
+                           label='Nom du joueur 4' /></View>
+                     </ScrollView>
                   </View>
       } else if (this.state.user == "cinq") {
          inputs = <View style={styles.inputView}>
-                     <Input inputStyle={styles.input}
-                        label='Nom du joueur 1' />
-                     <Input inputStyle={styles.input}
-                        label='Nom du joueur 2' />
-                     <Input inputStyle={styles.input}
-                        label='Nom du joueur 3' />
-                     <Input inputStyle={styles.input}
-                        label='Nom du joueur 4' />
-                     <Input inputStyle={styles.input}
-                        label='Nom du joueur 5' />
+                     <ScrollView>
+                        <Input inputStyle={styles.input}
+                           label='Nom du joueur 1' />
+                        <View style={{marginTop:30}}><Input inputStyle={styles.input}
+                           label='Nom du joueur 2' /></View>
+                        <View style={{marginTop:30}}><Input inputStyle={styles.input}
+                           label='Nom du joueur 3' /></View>
+                        <View style={{marginTop:30}}><Input inputStyle={styles.input}
+                           label='Nom du joueur 4' /></View>
+                        <View style={{marginTop:30}}><Input inputStyle={styles.input}
+                           label='Nom du joueur 5' /></View>
+                     </ScrollView>
                   </View>
       } else if (this.state.user == "six") {
          inputs = <View style={styles.inputView}>
-                     <Input inputStyle={styles.input}
-                        label='Nom du joueur 1' />
-                     <Input inputStyle={styles.input}
-                        label='Nom du joueur 2' />
-                     <Input inputStyle={styles.input}
-                        label='Nom du joueur 3' />
-                     <Input inputStyle={styles.input}
-                        label='Nom du joueur 4' />
-                     <Input inputStyle={styles.input}
-                        label='Nom du joueur 5' />
-                     <Input inputStyle={styles.input}
-                        label='Nom du joueur 6' />
+                     <ScrollView>
+                        <Input inputStyle={styles.input}
+                           label='Nom du joueur 1' />
+                        <View style={{marginTop:30}}><Input inputStyle={styles.input}
+                           label='Nom du joueur 2' /></View>
+                        <View style={{marginTop:30}}><Input inputStyle={styles.input}
+                           label='Nom du joueur 3' /></View>
+                        <View style={{marginTop:30}}><Input inputStyle={styles.input}
+                           label='Nom du joueur 4' /></View>
+                        <View style={{marginTop:30}}><Input inputStyle={styles.input}
+                           label='Nom du joueur 5' /></View>
+                        <View style={{marginTop:30}}><Input inputStyle={styles.input}
+                           label='Nom du joueur 6' /></View>
+                     </ScrollView>
                   </View>
       } else if (this.state.user == "sept") {
          inputs = <View style={styles.inputView}>
-                     <Input inputStyle={styles.input}
-                        label='Nom du joueur 1' />
-                     <Input inputStyle={styles.input}
-                        label='Nom du joueur 2' />
-                     <Input inputStyle={styles.input}
-                        label='Nom du joueur 3' />
-                     <Input inputStyle={styles.input}
-                        label='Nom du joueur 4' />
-                     <Input inputStyle={styles.input}
-                        label='Nom du joueur 5' />
-                     <Input inputStyle={styles.input}
-                        label='Nom du joueur 6' />
-                     <Input inputStyle={styles.input}
-                        label='Nom du joueur 7' />
+                     <ScrollView>
+                        <Input inputStyle={styles.input}
+                           label='Nom du joueur 1' />
+                        <View style={{marginTop:30}}><Input inputStyle={styles.input}
+                           label='Nom du joueur 2' /></View>
+                        <View style={{marginTop:30}}><Input inputStyle={styles.input}
+                           label='Nom du joueur 3' /></View>
+                        <View style={{marginTop:30}}><Input inputStyle={styles.input}
+                           label='Nom du joueur 4' /></View>
+                        <View style={{marginTop:30}}><Input inputStyle={styles.input}
+                           label='Nom du joueur 5' /></View>
+                        <View style={{marginTop:30}}><Input inputStyle={styles.input}
+                           label='Nom du joueur 6' /></View>
+                        <View style={{marginTop:30}}><Input inputStyle={styles.input}
+                           label='Nom du joueur 7' /></View>
+                     </ScrollView>
                   </View>
       } else if (this.state.user == "huit") {
          inputs = <View style={styles.inputView}>
-                     <Input inputStyle={styles.input}
-                        label='Nom du joueur 1' />
-                     <Input inputStyle={styles.input}
-                        label='Nom du joueur 2' />
-                     <Input inputStyle={styles.input}
-                        label='Nom du joueur 3' />
-                     <Input inputStyle={styles.input}
-                        label='Nom du joueur 4' />
-                     <Input inputStyle={styles.input}
-                        label='Nom du joueur 5' />
-                     <Input inputStyle={styles.input}
-                        label='Nom du joueur 6' />
-                     <Input inputStyle={styles.input}
-                        label='Nom du joueur 7' />
-                     <Input inputStyle={styles.input}
-                        label='Nom du joueur 8' />
+                     <ScrollView>
+                        <Input inputStyle={styles.input}
+                           label='Nom du joueur 1' />
+                        <View style={{marginTop:30}}><Input inputStyle={styles.input}
+                           label='Nom du joueur 2' /></View>
+                        <View style={{marginTop:30}}><Input inputStyle={styles.input}
+                           label='Nom du joueur 3' /></View>
+                        <View style={{marginTop:30}}><Input inputStyle={styles.input}
+                           label='Nom du joueur 4' /></View>
+                        <View style={{marginTop:30}}><Input inputStyle={styles.input}
+                           label='Nom du joueur 5' /></View>
+                        <View style={{marginTop:30}}><Input inputStyle={styles.input}
+                           label='Nom du joueur 6' /></View>
+                        <View style={{marginTop:30}}><Input inputStyle={styles.input}
+                           label='Nom du joueur 7' /></View>
+                        <View style={{marginTop:30}}><Input inputStyle={styles.input}
+                           label='Nom du joueur 8' /></View>
+                     </ScrollView>
                   </View>
+               
       }
       return (
          <View>
@@ -127,20 +143,18 @@ export default PickerPlayers
 const styles = StyleSheet.create({
    inputView: {
       width: 225,
+      maxHeight: '65%',
    },
    input: {
       color: 'white',
+      backgroundColor: '#3e7e87',
    },
    picker: {
       marginTop: 50,
       width: 100,
       color: 'white',
       alignContent: 'center',
-   },
-   text: {
-      fontSize: 30,
-      alignSelf: 'center',
-      color: 'red'
+      justifyContent: 'center'
    },
    uno: {
       color: 'red',

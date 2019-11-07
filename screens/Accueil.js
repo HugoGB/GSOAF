@@ -36,9 +36,11 @@ export default class Accueil extends React.Component {
                 </View>               
             </View>
 
-            <Text style={styles.prevention}>Attention l'abus d'alcool est très bon pour la santé.
-                En poursuivant, vous confirmez que vous ouvrez cette application pour vous mettre une méga murge.
-                Merci de bien finir vos bouteilles d'alcool et de les jeter dans les poubelles prévues pour.</Text> 
+            <View style={styles.preventionFlex}>
+                <Text style={styles.prevention}>Attention l'abus d'alcool est très bon pour la santé.
+                    En poursuivant, vous confirmez que vous ouvrez cette application pour vous mettre une méga murge.
+                    Merci de bien finir vos bouteilles d'alcool et de les jeter dans les poubelles prévues pour.</Text> 
+            </View>
 
         </View>
     );
@@ -58,8 +60,12 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
     },
-    prevention: {
+    preventionFlex: {
         flex: 1,
+        alignItems: 'center',
+    },
+    prevention: { 
+        width: 350,
         textAlign: 'justify',
         color: 'white',
         fontSize: 18,
