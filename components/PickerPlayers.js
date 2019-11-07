@@ -4,6 +4,29 @@ import { FormLabel, FormInput, Input } from 'react-native-elements';
 import { ScrollView } from 'react-native-gesture-handler';
 
 class PickerPlayers extends React.Component {
+
+   // constructor(props){
+   //    super(props);
+   //    this.state= {
+   //       names: props.navigation.state.params.names,
+   //    }
+   // }
+
+   // componentWillReceiveProps(newProps) {
+   //    this.setState({names: newProps.names});
+   // }
+
+   // state = { user: '' }
+   // updateUser = (name, id) => {
+   //    this.setState({ names.set: name })
+   // }
+
+   // updateUsers(){
+   //    for (var i=0; i < this.state.user; i++){
+         
+   //    }
+   // }
+   
    state = { user: '' }
    updateUser = (user) => {
       this.setState({ user: user })
