@@ -1,30 +1,29 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image, ScrollView } from 'react-native';
+import { StyleSheet, Text, View, Image } from 'react-native';
+import PickerPlayers from '../components/PickerPlayers.js';
 
-export default function CreateParty() {
+export default class CreateParty extends React.Component {
+  render() {
   return (
-    <View style={styles.container}>
-        <Image style={styles.image}
-            source={require('../assets/logo_unique.png')} />
-        <Text style={styles.title}>G S O A F</Text>        
-    </View>
+        <View style={styles.container}>
+            <Image style={styles.image}
+                source={require('../assets/logo_unique.png')} />
+            <Text style={styles.title}>G S O A F</Text>  
+            <View style={styles.picker}>   
+                <PickerPlayers /> 
+            </View> 
+        </View>
   );
+  }
 }
 
-// creation variable Partie
-class Partie {
-    
-}
-// Ajouter joueurs  
-//Questions(4) pour distribution de cartes
-//montage pyramide 
-
-const styles = StyleSheet.create({
-    container:{
-        display: 'flex' ,
+const styles = StyleSheet.create({    
+    container: {
+        flex: 1,
+        backgroundColor: '#195C65',
         alignItems: 'center',
-        justifyContent: 'space-between'
-    },
+        textAlign: 'center',
+    },    
     title: {
         color: 'white',
     },
@@ -32,11 +31,13 @@ const styles = StyleSheet.create({
         width: 80,
         height: 75,
         left: 12,
-        marginTop:75,
+        marginTop:25,
         resizeMode: 'stretch',
-        // marginTop:75,
-        // width: 200,
-        // height: 75,
-        // resizeMode: 'stretch'
+    },
+    picker: {
+        marginTop:50,
+        width: 100,
+        color: 'white',
+        backgroundColor: '#558187'
     },
 });
