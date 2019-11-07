@@ -3,10 +3,16 @@ import { StyleSheet, Text, View, Image } from 'react-native';
 
 
 export default class Partie extends React.Component {
-    const Players = 
-    <Text>Pour la suite de ce jeu il faut un narrateur désigner le narrateur :</Text> 
-    //Rouge ou Noir
-    //Plus ou moins
-    //Intene ou externe
-    //Pique Coeur Carreau Trefle ?
-} 
+    // const Players = 
+    render() {
+        return (
+            <View style={styles.container}>
+                <Text>Pour la suite de ce jeu il faut un narrateur désigner le narrateur :</Text>
+            </View>
+        )
+        //Rouge ou Noir
+        //Plus ou moins
+        //Intene ou externe
+        //Pique Coeur Carreau Trefle ?
+    }
+}
