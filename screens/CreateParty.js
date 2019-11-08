@@ -9,7 +9,7 @@ export default class CreateParty extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      users: [],
+      users: ['', ''],
     };
   }
 
@@ -26,6 +26,16 @@ export default class CreateParty extends React.Component {
       users: update(this.state.users, {[id]: {$set: newName}})
     })
   }
+  setPlayersNumber(number){    
+    let newUsers= JSON.parse(JSON.stringify(this.state.users))
+    for(let i = this.state.users.length ; i < number ; i ++){
+      newUsers.push('')
+    }      
+    newUsers = newUsers.slice(0, number)
+    this.setState({
+      users: newUsers
+    })
+  }
 
   render() {    
     const {navigate} = this.props.navigation;
@@ -38,14 +48,15 @@ export default class CreateParty extends React.Component {
             <PickerPlayers monCallbackDeMiseAJourDuFutur={ this.userNameChangedCallback.bind(this /*  on envoie en plus le contexte
                                                                                                       c'est à dire CreateParty  */ )  }
             //             monCallbackDeMiseAJourDuFutur={ (id, text) => this.userNameChangedCallback(id, text)  }
-                   users={ this.state.users} /> 
-          <Text style={{backgroundColor: 'white'}}>{this.state.users[0] }</Text>
-          <Text>{this.props.user}</Text>
+                  setPlayersNumber={this.setPlayersNumber.bind(this)}
+                   users={ this.state.users} />
           <View style={{width:250, marginTop:50}}>
              <Button
                 color="#FFB341"
                 title="Jouer"
-                onPress={() => navigate('DeroulePartie')} />
+                onPress={() => navigate('DeroulePartie', {
+                  users: this.state.users
+                })} />
           </View>
         </View>
     );
