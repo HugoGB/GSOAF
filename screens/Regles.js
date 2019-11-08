@@ -14,8 +14,8 @@ export default class Regles extends React.Component {
             <View style={styles.container}>
                 <Image style={styles.image}
                     source={require('../assets/logo_unique.png')} />
-
                 <Text style={styles.title}>G S O A F</Text>
+                
                     <Text style={styles.text}>Bonjour, et Bienvenue Dans Cette Application pour Soiffard,
                         Dans cette application vous retrouverez le jeu de la pyramide,
                         Mais aussi d'autres Jeux pour se murger la gueule salement ! {'\n'}

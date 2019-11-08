@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
    },
    picker: {
       marginTop: 50,
-      width: 100,
+      marginBottom: 25,
       color: 'white',
       alignContent: 'center',
       justifyContent: 'center'
